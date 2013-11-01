@@ -6,5 +6,7 @@
  autowire="constructor" says to run constructor of all classes defined with bean id tags in 
  applicationContext.xml
  
+ unlike autowiring by name, in autowiring by constructor Constructor Overloading is possible.
+ 
  As like in our case MyText constructor will run even it has got no relation with TextEitor's class
  Constructor in which actually the auto wiring is called.

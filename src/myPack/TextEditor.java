@@ -1,9 +1,15 @@
 package myPack;
 
+
 public class TextEditor {
 	   private SpellChecker spellChecker;
 	   private String name;
 
+	   public TextEditor()
+	   {
+		   System.out.println("will.i.am");
+	   }
+	   
 	   public TextEditor( SpellChecker spellChecker, String name ) {
 	      this.spellChecker = spellChecker;
 	      this.name = name;

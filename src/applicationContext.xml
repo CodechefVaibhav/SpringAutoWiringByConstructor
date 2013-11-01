@@ -11,11 +11,19 @@
       <constructor-arg value="Generic Text Editor"/>
    </bean>
 
+    <!-- Below bean tag makes call to default constructor 
+    which makes constructor overloading of class TextEditor
+    successful -->
+	<bean id="testdefault"  class="myPack.TextEditor"
+	autowire="default">
+	</bean>
+	
    <!-- Definition for spellChecker bean -->
    <bean id="SpellCheckerasas" class="myPack.SpellChecker">
    </bean>
    
-   <bean id="myAddress" class="myPack.MyTest">
+   <bean id="myAddress" class="myPack.MyTest"
+   	autowire="constructor">
    	<constructor-arg value="Italy"/>
    </bean>
 
